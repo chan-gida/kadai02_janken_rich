@@ -12,6 +12,7 @@ $('.button').off('click');
 $('.button').on("click", function () {
     console.log("起動")
     $(".dice1,.dice2").addClass('rotate');
+    $(".play-button").get(0).play()
 
     //左側サイコロストップ 
     setTimeout(function () {
@@ -26,7 +27,7 @@ $('.button').on("click", function () {
         $('.dice1 .item').addClass('block');
         $(`.dice1 .item[data-face="${num1}"]`).removeClass('block');
         $(`.dice1 .item[data-face="${num1}"]`).css("transform", "none");
-    }, 2000);
+    }, 1500);
 
     // 右側サイコロストップ
     setTimeout(function () {
@@ -56,7 +57,7 @@ $('.button').on("click", function () {
         $('.dice2 .item').addClass('block');
         $(`.dice2 .item[data-face="${num2}"]`).removeClass('block');
         $(`.dice2 .item[data-face="${num2}"]`).css("transform", "none");
-    }, 5000);
+    }, 2000);
 
 
     // 両方のサイコロの変数が揃った時の挙動

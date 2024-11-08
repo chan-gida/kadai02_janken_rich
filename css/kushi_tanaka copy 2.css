@@ -15,6 +15,7 @@ header {
     text-align: center;
     align-items: center;
     max-height: 120px;
+    z-index: 1000;
     /*絶対位置*/
     position: sticky;
     /*最下部固定*/
@@ -34,7 +35,7 @@ header img {
 /* 全体配置 */
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -263,9 +264,9 @@ header img {
     justify-content: center;
 }
 
-h2 {
+h3 {
     text-align: center;
-    margin-top: 10px 10px 10px 10px;
+    margin: 0;
 }
 
 .kekka {
