@@ -108,37 +108,37 @@ header img {
 /* 1 */
 .dice1 .item:nth-child(1) {
     transform: translate3d(0, -50px, 0) rotateX(-90deg);
-    background: url(/img/dicenome_01.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_01.png) no-repeat center center / 100% 100%;
 }
 
 /* 2 */
 .dice1 .item:nth-child(2) {
     transform: translate3d(0, 0, 50px);
-    background: url(/img/dicenome_02.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_02.png) no-repeat center center / 100% 100%;
 }
 
 /* 3 */
 .dice1 .item:nth-child(3) {
     transform: translate3d(50px, 0, 0) rotateY(90deg);
-    background: url(/img/dicenome_03.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_03.png) no-repeat center center / 100% 100%;
 }
 
 /* 4 */
 .dice1 .item:nth-child(4) {
     transform: translate3d(-50px, 0, 0) rotateY(-90deg);
-    background: url(/img/dicenome_04.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_04.png) no-repeat center center / 100% 100%;
 }
 
 /* 5 */
 .dice1 .item:nth-child(5) {
     transform: translate3d(0, 0, -50px) rotateY(180deg);
-    background: url(/img/dicenome_05.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_05.png) no-repeat center center / 100% 100%;
 }
 
 /* 6 */
 .dice1 .item:nth-child(6) {
     transform: translate3d(0, 50px, 0) rotateX(-90deg);
-    background: url(/img/dicenome_06.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_06.png) no-repeat center center / 100% 100%;
 }
 
 @keyframes rotate-animation {
@@ -192,37 +192,37 @@ header img {
 /* 1 */
 .dice2 .item:nth-child(1) {
     transform: translate3d(0, -50px, 0) rotateX(-90deg);
-    background: url(/img/dicenome_04.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_04.png) no-repeat center center / 100% 100%;
 }
 
 /* 2 */
 .dice2 .item:nth-child(2) {
     transform: translate3d(0, 0, 50px);
-    background: url(/img/dicenome_06.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_06.png) no-repeat center center / 100% 100%;
 }
 
 /* 3 */
 .dice2 .item:nth-child(3) {
     transform: translate3d(50px, 0, 0) rotateY(90deg);
-    background: url(/img/dicenome_03.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_03.png) no-repeat center center / 100% 100%;
 }
 
 /* 4 */
 .dice2 .item:nth-child(4) {
     transform: translate3d(-50px, 0, 0) rotateY(-90deg);
-    background: url(/img/dicenome_02.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_02.png) no-repeat center center / 100% 100%;
 }
 
 /* 5 */
 .dice2 .item:nth-child(5) {
     transform: translate3d(0, 0, -50px) rotateY(180deg);
-    background: url(/img/dicenome_01.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_01.png) no-repeat center center / 100% 100%;
 }
 
 /* 6 */
 .dice2 .item:nth-child(6) {
     transform: translate3d(0, 50px, 0) rotateX(-90deg);
-    background: url(/img/dicenome_05.png) no-repeat center center / 100% 100%;
+    background: url(./img/dicenome_05.png) no-repeat center center / 100% 100%;
 }
 
 @keyframes rotate-animation {
