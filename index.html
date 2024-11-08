@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>串カツ屋のチンチロrich</title>
+    <link rel="stylesheet" href="./css/kushi_tanaka copy 2.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- ロゴ -->
+        <div class="logo">
+            <a href="http://127.0.0.1:5500/js-learning-sample-master/omikuji/kushi_tanaka.html">
+                <img src="./img/図1.png" alt="ロゴ" />
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- 左サイド -->
+            <div class="mainvisual">
+                <img src="./img/chinchiro.jpg" alt="チンチロリン" />
+            </div>
+            <!-- 右サイド -->
+            <div class="right_side">
+                <h2>チンチロリン<br />チャレンジ</h2>
+                <div class="tap">
+                    <!-- サイコロ表示画像 左-->
+                    <div class="dice1" value="sai_1">
+                        <div class="item" data-face="1"></div>
+                        <div class="item" data-face="2"></div>
+                        <div class="item" data-face="3"></div>
+                        <div class="item" data-face="4"></div>
+                        <div class="item" data-face="5"></div>
+                        <div class="item" data-face="6"></div>
+                    </div>
+                    <!-- 最初の表示画像 右-->
+                    <div class="dice2" value="sai_2">
+                        <div class="item" data-face="4"></div>
+                        <div class="item" data-face="6"></div>
+                        <div class="item" data-face="3"></div>
+                        <div class="item" data-face="2"></div>
+                        <div class="item" data-face="1"></div>
+                        <div class="item" data-face="5"></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="dice_start_stop">サイコロを転がす </button>
+                </div>
+                <audio src="/img/陶器でチンチロリン2.mp3" class="play-button"></audio>
+            </div>
+        </div>
+        <h3>結果</h3>
+        <div class="kekka">
+            <p>？？？</p>
+        </div>
+
+    </main>
+
+    <!-- /#footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            copyrights 2024 Kushikatsu TanakaTaro All RIghts Reserved.
+        </div>
+    </footer>
+
+    <!-- jQueryライブラリ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jsファイルリンク -->
+    <script src="js/kushi_tanaka copy 2.js"></script>
+</body>
+
+</html>
