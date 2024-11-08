@@ -1,0 +1,307 @@
+html {
+    background-color: #fffcad;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 32px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fbde02;
+    text-align: center;
+    align-items: center;
+    max-height: 120px;
+    /*絶対位置*/
+    position: sticky;
+    /*最下部固定*/
+    top: 0;
+}
+
+.logo {
+    align-items: center;
+}
+
+header img {
+    width: auto;
+    align-items: center;
+    max-height: 120px;
+}
+
+/* 全体配置 */
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.left_side {
+    width: 100%;
+}
+
+/* メインビジュアル */
+.mainvisual {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.mainvisual img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/* サイコロ2つのコンテな */
+.tap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 60px;
+}
+
+/* 振る前のサイコロ */
+.btn1,
+.btn2 {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: white;
+}
+
+/* サイコロ振っているアニメーション左 */
+.dice1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+
+.dice1.rotate {
+    animation: rotate-animation 0.8s linear infinite;
+}
+
+.dice1 .item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #333;
+    width: 100%;
+    height: 100%;
+}
+
+.dice1 .item.block {
+    display: none;
+    /* 非表示化 */
+}
+
+/* 1 */
+.dice1 .item:nth-child(1) {
+    transform: translate3d(0, -50px, 0) rotateX(-90deg);
+    background: url(/img/dicenome_01.png) no-repeat center center / 100% 100%;
+}
+
+/* 2 */
+.dice1 .item:nth-child(2) {
+    transform: translate3d(0, 0, 50px);
+    background: url(/img/dicenome_02.png) no-repeat center center / 100% 100%;
+}
+
+/* 3 */
+.dice1 .item:nth-child(3) {
+    transform: translate3d(50px, 0, 0) rotateY(90deg);
+    background: url(/img/dicenome_03.png) no-repeat center center / 100% 100%;
+}
+
+/* 4 */
+.dice1 .item:nth-child(4) {
+    transform: translate3d(-50px, 0, 0) rotateY(-90deg);
+    background: url(/img/dicenome_04.png) no-repeat center center / 100% 100%;
+}
+
+/* 5 */
+.dice1 .item:nth-child(5) {
+    transform: translate3d(0, 0, -50px) rotateY(180deg);
+    background: url(/img/dicenome_05.png) no-repeat center center / 100% 100%;
+}
+
+/* 6 */
+.dice1 .item:nth-child(6) {
+    transform: translate3d(0, 50px, 0) rotateX(-90deg);
+    background: url(/img/dicenome_06.png) no-repeat center center / 100% 100%;
+}
+
+@keyframes rotate-animation {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+/* サイコロ振っているアニメーション右 */
+.dice2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+
+.dice2.rotate {
+    animation: rotate-animation 0.8s linear infinite;
+}
+
+.dice2 .item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #333;
+    width: 100%;
+    height: 100%;
+}
+
+.dice2 .item.block {
+    display: none;
+    /* 非表示化 */
+}
+
+/* 1 */
+.dice2 .item:nth-child(1) {
+    transform: translate3d(0, -50px, 0) rotateX(-90deg);
+    background: url(/img/dicenome_04.png) no-repeat center center / 100% 100%;
+}
+
+/* 2 */
+.dice2 .item:nth-child(2) {
+    transform: translate3d(0, 0, 50px);
+    background: url(/img/dicenome_06.png) no-repeat center center / 100% 100%;
+}
+
+/* 3 */
+.dice2 .item:nth-child(3) {
+    transform: translate3d(50px, 0, 0) rotateY(90deg);
+    background: url(/img/dicenome_03.png) no-repeat center center / 100% 100%;
+}
+
+/* 4 */
+.dice2 .item:nth-child(4) {
+    transform: translate3d(-50px, 0, 0) rotateY(-90deg);
+    background: url(/img/dicenome_02.png) no-repeat center center / 100% 100%;
+}
+
+/* 5 */
+.dice2 .item:nth-child(5) {
+    transform: translate3d(0, 0, -50px) rotateY(180deg);
+    background: url(/img/dicenome_01.png) no-repeat center center / 100% 100%;
+}
+
+/* 6 */
+.dice2 .item:nth-child(6) {
+    transform: translate3d(0, 50px, 0) rotateX(-90deg);
+    background: url(/img/dicenome_05.png) no-repeat center center / 100% 100%;
+}
+
+@keyframes rotate-animation {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+/* 振った後のサイコロ */
+.deme1,
+.deme2,
+.deme3,
+.deme4,
+.deme5,
+.deme6 {
+    width: initial;
+    width: 30%;
+    padding: 50px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px 10px 10px 10px;
+}
+
+.kekka {
+    font-weight: bold;
+    width: 50%;
+    aspect-ratio: 2814 / 1086;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    background-color: #FBDE02;
+}
+
+.half-width-image {
+    width: 100%;
+}
+
+/* footer */
+/* 箱 */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*絶対位置*/
+    position: sticky;
+    /*最下部固定*/
+    bottom: 0;
+    margin-top: 60px;
+}
+
+/* 文字 */
+.footer-text {
+    font-size: 16px;
+    color: white;
+    padding: 30px;
+    padding: 30px;
+}
